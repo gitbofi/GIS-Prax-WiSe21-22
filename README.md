@@ -10,4 +10,4 @@
 
 ## Github Pages:
 
-https://aitf4.github.io/GIS-Prax-WiSe21-22/
+https://gitbofi.github.io/GIS-Prax-WiSe21-22/
