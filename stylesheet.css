@@ -45,13 +45,12 @@ li {
     font-size: 20px;
 }
 
-a {
-    color: #BEBBBB;
-    text-decoration: none;
+li a {
+    display: block;
+    color: inherit;
 }
 
-a:visited {
-    color: #BEBBBB;
+a {
     text-decoration: none;
 }
 
@@ -62,9 +61,4 @@ a:link {
 li:hover {
     background-color: #121212;
     color: #03b670;
-}
-
-li a {
-    display: block;
-    color: inherit;
 }
