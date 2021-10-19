@@ -2,7 +2,7 @@
 
 ### In aller kürze die wichtigsten Infos...
 
-* Accountname: aIt_f4
+* Accountname: gitbofi
 
 * Name: Fabian F.
 
