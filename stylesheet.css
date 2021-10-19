@@ -45,6 +45,10 @@ li {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:link {
     color: #BEBBBB
 }
@@ -58,8 +62,3 @@ li a {
     display: block;
     color: inherit;
 }
-
-a {
-    text-decoration: none;
-}
-
