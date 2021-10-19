@@ -1,11 +1,13 @@
-# Aufgaben
+# GIS WiSe 2021/2022
 
-### **1. HTML-Grundlagen**
- * Code:
- * GitHub Pages: 
- 
-</br> 
+### In aller kürze die wichtigsten Infos...
 
-### **2. CSS-Grundlagen**
-  * Code:
-  * GitHub Pages: 
+* Accountname: aIt_f4
+
+* Name: Fabian F.
+
+* Studiengang: OnlineMedien 2. Semester (Gruppe A)
+
+## Github Pages:
+
+https://aitf4.github.io/GIS-Prax-WiSe21-22/
