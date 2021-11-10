@@ -159,3 +159,25 @@ iframe {
     margin: 0 auto;
     margin-bottom: 30px;
 }
+
+#header-home {
+    color:#47414C;
+}
+
+#wirtschaft {
+    color: #47414C;
+}
+
+@media (max-width: 1000px) {
+    .content-section {
+        font-size: 2em;
+    }
+}
+
+.img-info {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
