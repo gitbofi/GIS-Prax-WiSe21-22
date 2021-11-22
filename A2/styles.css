@@ -128,27 +128,42 @@ a:hover {
     height: 50px;
 }
 
-.table {
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number] {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
-.table td, .table th {
-    padding: 12px 15px;
-    border: 2px solid #47414C;
-    text-align: center;
-    font-size: 1.5em;
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.table th {
-    background-color: #47414C;
-    color: #E4DBCF;
-}
-
-.table tbody tr:nth-child(even) {
-    background-color: rgba(161, 132, 122, .2);
+form div.form-action-buttons{
+    text-align: right;
 }
 
 iframe {

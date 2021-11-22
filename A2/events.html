@@ -13,7 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <script src="myscripts.js"></script>
     <title>A1.Reiseblog</title>
 </head>
 
@@ -47,38 +46,68 @@
             </p>
         </section>
 
-        <section>
-            <table class="table container">
-                <thead>
-                    <th>Saison</th>
-                    <th>Kinder</th>
-                    <th>Erwachsene</th>
-                    <th>Ermäßigt</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Hauptsaison</td>
-                        <td>10€</td>
-                        <td>16€</td>
-                        <td>12€</td>
-                    </tr>
-                    <tr>
-                        <td>Nebensaison</td>
-                        <td>6€</td>
-                        <td>12€</td>
-                        <td>7€</td>
-                    </tr>
-                </tbody>
+        <section class="container">
+            <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <div>
+                                <label>Artist</label><label class="validation-error hide" id="artistValidationError">*</label>
+                                <input type="text" id="artist" placeholder="Artist" />
+                            </div>
+                            <div>
+                                <label>Ticket Price</label>
+                                <input type="number" id="price" placeholder="Ticket Price" />
+                            </div>
+                            <div>
+                                <label>Location</label>
+                                <input type="text" id="location" placeholder="Location" />
+                            </div>
+                            <div>
+                                <label>Date</label>
+                                <input type="date" id="date" placeholder="Date" />
+                            </div>
+                            <div class="form-action-buttons">
+                                <input type="submit" value="Submit" />
+                            </div>
+                            <p>* = required field</p>
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="event-list">
+                            <thead>
+                                <tr>
+                                    <th>Artist</th>
+                                    <th>Ticket Price</th>
+                                    <th>Location</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
             </table>
         </section>
+
+
+
         <section class="container content-section">
             <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                sanctus est Lorem ipsum dolor sit amet.
             </p>
         </section>
         <section class="container">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bR_k1pLQ86M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bR_k1pLQ86M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
     </main>
 
@@ -104,6 +133,7 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
