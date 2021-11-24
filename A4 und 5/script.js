@@ -9,8 +9,6 @@ window.onload = function checkLocalStorageData() {
             insertNewRecord(readLocSt);
             test++;
         }
-    } else {
-        alert("empty");
     }
 }
 
