@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>A1.Reiseblog</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="events.html">events</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="city-name city-name-large">Auckland, NZ</h1>
+    </header>
+
+    <main>
+        <section class="content-section container">
+            <h1 class="section-header">events</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </section>
+
+        <section class="container">
+            <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <div>
+                                <label>Artist</label><label class="validation-error hide" id="artistValidationError">*</label>
+                                <input type="text" id="artist" placeholder="Artist" />
+                            </div>
+                            <div>
+                                <label>Ticket Price</label>
+                                <input type="number" id="price" placeholder="Ticket Price" />
+                            </div>
+                            <div>
+                                <label>Location</label>
+                                <input type="text" id="location" placeholder="Location" />
+                            </div>
+                            <div>
+                                <label>Date</label>
+                                <input type="date" id="date" placeholder="Date" />
+                            </div>
+                            <div class="form-action-buttons">
+                                <input type="submit" value="Submit" />
+                            </div>
+                            <p>* = required field</p>
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="event-list">
+                            <thead>
+                                <tr>
+                                    <th>Artist</th>
+                                    <th>Ticket Price</th>
+                                    <th>Location</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+
+
+        <section class="container content-section">
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </section>
+        <section class="container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bR_k1pLQ86M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="city-name">Auckland, NZ</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.instagram.com/visitauckland/" target="_blank">
+                        <img src="insta_logo_bw.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/aklcouncil/" target="_blank">
+                        <img src="fb_logo_bw.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/aklcouncil" target="_blank">
+                        <img src="twitter_logo_bw.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
