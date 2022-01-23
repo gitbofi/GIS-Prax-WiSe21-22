@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <h1>Create new Event</h1>
+
+    <div class="create-event content">
+        <form action="/events" method="POST">
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="body">Location:</label>
+            <input type="text" id="loc" name="loc" required>
+            <label for="price">Price:</label>
+            <input type="number" name="price" id="price" required>
+            <button>Submit</button>
+        </form>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

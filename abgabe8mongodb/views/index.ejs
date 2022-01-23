@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+
+    <%- include('./partials/nav.ejs') %>
+
+    <h1>Events</h1>
+
+    <div>
+        <h2>Upcoming Concerts</h2>
+
+        <% if (events.length > 0) { %>
+            <% events.forEach(event => { %>
+                <a class="single" href="/events/<%= event._id %>">
+                    <h3 class="artist"><%= event.artist %></h3>
+                    <p class="date"><%= event.date %></p>
+                </a>
+            <% }) %>
+        <% } else { %>
+            <p>No Concerts to display.</p>
+        <% } %>
+
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
